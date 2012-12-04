@@ -1,0 +1,15 @@
+<div class='welcome'>
+  <span>Hello, How can I help you?</span>
+</div>
+
+<div class='waiting-counts'><span>There are x riders and y drivers waiting</span></div>
+
+<div class='need-riders'>
+  <span>I need </span>
+  <img src='assets/man_symbol.png'/>
+</div>
+
+<div class='need-drivers'>
+  <span>I need</span>
+  <img src='assets/car_symbol.png'/>
+</div>

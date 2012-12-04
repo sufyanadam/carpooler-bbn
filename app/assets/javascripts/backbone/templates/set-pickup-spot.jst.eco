@@ -1,0 +1,10 @@
+<div class='use-user-location'>
+  <span>Use my location</span>
+</div>
+
+<div class='select-direction'>
+  <ul>
+    <li>To San Francisco</li>
+    <li>From San Francisco</li>
+  </ul>
+</div>
