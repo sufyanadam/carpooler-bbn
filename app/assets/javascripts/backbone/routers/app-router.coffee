@@ -1,8 +1,9 @@
 class App.Routers.AppRouter extends Backbone.Router
-  routes:
-    "" : "index"
-    "riders"
+  initialize: (options) =>
+    @pickupSpots = options.pickupSpots
 
+  routes:
+    ""       : "index"
   index: =>
-    view = new App.Views.Home.Index()
+    view = new App.Views.Home.Index(pickupSpots: @pickupSpots)
     $('.app-region').html view.render().el

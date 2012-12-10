@@ -1,0 +1,1 @@
+class App.Models.SuperModel extends Backbone.Model

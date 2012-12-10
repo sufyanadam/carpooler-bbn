@@ -1,0 +1,22 @@
+<div class='pickup-spot-stats'>
+  <span>At other locations...</span>
+  <ul>
+    <% for spot in @pickupSpots: %>
+    <li>
+      <div class='pickup-spot-region' data-pickup-spot-id='<%= spot.id%>'>
+        <div class='spot-name'>
+          <span class='spot-name'><%= spot.get 'name'%></span>
+        </div>
+        <div class='driver-info'>
+          <div class='car-symbol'><img src='assets/car_symbol.png'></img></div>
+          <span class='driver-count'><%= spot.get('waiting_drivers').length %></span>
+        </div>
+        <div class='rider-info'>
+          <div class='man-symbol'><img src='assets/man_symbol.png'></img></div>
+          <span class='rider-count'><%= spot.get('waiting_riders').length %></span>
+        </div>
+      </div>
+    </li>
+    <% end %>
+  </ul>
+</div>

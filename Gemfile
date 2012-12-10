@@ -7,11 +7,13 @@ gem 'rails', '3.2.8'
 
 gem 'sqlite3'
 gem 'eco'
+gem 'geocoder'
 
 group :development, :test do
   gem 'rspec'
   gem 'jasmine', :git => "git://github.com/pivotal/jasmine-gem.git"
   gem 'jasmine-headless-webkit'
+  gem 'rspec-rails'
 end
 
 # Gems used only for assets and not required

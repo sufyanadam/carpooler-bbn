@@ -1,0 +1,61 @@
+body {
+  background-color: #EAEAEA;
+
+  .app-region {
+     text-align: center;
+    
+    .hidden {
+      display: none;
+    }
+
+    .pickup-spot-stats {
+      padding-top: 26px;
+    }
+
+    .nearest-pickup-spot {
+      padding-left: 24px;
+    }
+
+    .pickup-spot-region {
+      padding: 19px 0px 13px 0px;
+
+      img {
+        height: 37px;
+      }
+      
+      .driver-info {
+        display: inline-block;
+
+        img {
+          height: 34px;
+        }
+      } 
+      
+      .rider-info {
+        display: inline-block;
+        padding-left: 33px;
+        height: 55px;
+        width: 44px;
+      }
+    }
+    
+    ul {
+      list-style-type: none;
+      padding: 0;
+
+      .pickup-spot-region {
+        img {
+          height: 37px;
+        }
+
+        .driver-info {
+          padding-top: 19px;
+          
+          img {
+            height: 34px;
+          }
+        }
+      }
+    }
+  }
+}

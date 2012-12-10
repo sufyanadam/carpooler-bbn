@@ -1,5 +1,25 @@
 Carpooler::Application.routes.draw do
   root :to => 'home#show'
+
+  resources :riders do
+    collection do
+      get :index
+      put :send_updated_stats
+    end
+  end
+
+  resources :drivers do
+    collection do
+      get :index
+    end
+  end
+
+  resources :pickup_spots do
+    collection do
+      get :index
+      get :nearest_spot
+    end
+  end
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

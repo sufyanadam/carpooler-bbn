@@ -1,7 +1,7 @@
 <div class='app-region'></div>
 <script type='text/javascript'>
   $(function() {
-    appRouter = new App.Routers.AppRouter();
+    appRouter = new App.Routers.AppRouter({pickupSpots: <%= @pickup_spots.html_safe %>});
     Backbone.history.start({pushState: true});
   });
 </script>
