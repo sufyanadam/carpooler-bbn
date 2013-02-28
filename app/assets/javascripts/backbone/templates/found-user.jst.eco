@@ -1,6 +1,8 @@
 <div class='found-user'>
   <div class='distance-radius-text'>
-    <span><%= "Within #{@options.nearestPickupSpot.get('distance')} miles of your current location" %></span>
+    <span><%= "The nearest pickup location is at #{@options.nearestPickupSpot.get('name')}" %></span>
+    <br/><br/>
+    <span>Currently there are</span>
   </div>
   <div class='pickup-spot-region nearest' data-pickup-spot-id='<%= @options.nearestPickupSpot.id%>'>
     <div class='driver-info'>
@@ -11,8 +13,13 @@
       <div class='man-symbol'><img src='assets/man_symbol.png'></img></div>
       <span class='rider-count'><%= @options.waitingRidersCount %></span>
     </div>
-  </div>
-  <div class='nearest-pickup-spot'>
-    <span>@ the <%= "#{@options.nearestPickupSpot.get 'name'} pickup spot" %></span>
+    <div class='waiting-for-riders'>
+      <span>I need</span>
+      <img src='assets/man_symbol.png'></img>
+    </div>
+    <div class='waiting-for-drivers'>
+      <span>I need</span>
+      <img src='assets/car_symbol.png'></img>
+    </div>
   </div>
 </div>

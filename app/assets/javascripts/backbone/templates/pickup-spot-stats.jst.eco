@@ -2,6 +2,7 @@
   <span>At other locations...</span>
   <ul>
     <% for spot in @pickupSpots: %>
+    <% console.log 'the spots!!!!!!!!!!!!!!!', @pickupSpots%>
     <li>
       <div class='pickup-spot-region' data-pickup-spot-id='<%= spot.id%>'>
         <div class='spot-name'>

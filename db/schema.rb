@@ -21,23 +21,22 @@ ActiveRecord::Schema.define(:version => 20121204211857) do
 
   create_table "drivers", :force => true do |t|
     t.decimal  "current_lat"
-    t.decimal  "float"
     t.decimal  "current_lng"
     t.datetime "last_seen_at"
     t.decimal  "last_seen_lat"
     t.decimal  "last_seen_lng"
+    t.decimal  "distance_moved_since_last_seen"
     t.string   "available_for"
     t.integer  "pickup_spot_id"
     t.integer  "destination_spot_id"
     t.string   "type"
-    t.datetime "created_at",          :null => false
-    t.datetime "updated_at",          :null => false
+    t.datetime "created_at",                     :null => false
+    t.datetime "updated_at",                     :null => false
   end
 
   create_table "pickup_spots", :force => true do |t|
     t.string   "name"
     t.decimal  "lat"
-    t.decimal  "float"
     t.decimal  "lng"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
@@ -45,18 +44,18 @@ ActiveRecord::Schema.define(:version => 20121204211857) do
 
   create_table "riders", :force => true do |t|
     t.decimal  "current_lat"
-    t.decimal  "float"
     t.decimal  "current_lng"
     t.datetime "last_seen_at"
     t.decimal  "last_seen_lat"
     t.decimal  "last_seen_lng"
+    t.decimal  "distance_moved_since_last_seen"
     t.string   "available_for"
     t.integer  "reserving_driver_id"
     t.integer  "pickup_spot_id"
     t.integer  "destination_spot_id"
     t.string   "type"
-    t.datetime "created_at",          :null => false
-    t.datetime "updated_at",          :null => false
+    t.datetime "created_at",                     :null => false
+    t.datetime "updated_at",                     :null => false
   end
 
 end

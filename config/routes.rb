@@ -18,6 +18,7 @@ Carpooler::Application.routes.draw do
     collection do
       get :index
       get :nearest_spot
+      get :nearest_pickup_spots
     end
   end
   # The priority is based upon order of creation:

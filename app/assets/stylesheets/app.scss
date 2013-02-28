@@ -16,8 +16,57 @@ body {
       padding-left: 24px;
     }
 
-    .pickup-spot-region {
+    .pickup-spot-region, .destination-spot-region {
       padding: 19px 0px 13px 0px;
+
+      .waiting-for-riders {
+        border: 2px solid #bbb;
+        border-radius: 32px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 20%;
+        margin-top: 17px;
+        box-shadow: inset 1px 1px 1px 1px #fff;
+        
+        img {
+          height: 29px;
+          display: block;
+          padding-top: 5px;
+          padding-bottom: 5px;
+        }
+        
+        span {
+          float: left;
+          width: 33%;
+          padding-top: 10px;
+          margin-left: 68px;
+        }
+      }
+      
+      .waiting-for-drivers {
+        border: 2px solid #bbb;
+        border-radius: 32px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 20%;
+        margin-top: 17px;
+        box-shadow: inset 1px 1px 1px 1px #fff;
+
+        
+        img {
+          height: 19px;
+          display: block;
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+        
+        span {
+          float: left;
+          width: 28%;
+          padding-top: 10px;
+          margin-left: 75px;
+        }
+      }
 
       img {
         height: 37px;
@@ -43,7 +92,7 @@ body {
       list-style-type: none;
       padding: 0;
 
-      .pickup-spot-region {
+      .pickup-spot-region, .destination-spot-region {
         img {
           height: 37px;
         }

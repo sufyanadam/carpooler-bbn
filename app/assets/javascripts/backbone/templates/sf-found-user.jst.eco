@@ -1,0 +1,22 @@
+<div class='pickup-spot-stats'>
+  <span>In San Francisco:</span>
+  <ul>
+    <% for destination in @options.destinations.models: %>
+    <li>
+      <div class='destination-spot-region' data-destination-spot-id='<%= destination.id%>'>
+        <div class='spot-name'>
+          <span class='spot-name'><%= destination.get 'name'%></span>
+        </div>
+        <div class='driver-info'>
+          <div class='car-symbol'><img src='assets/car_symbol.png'></img></div>
+          <span class='driver-count'><%= destination.get('waiting_drivers').length %></span>
+        </div>
+        <div class='rider-info'>
+          <div class='man-symbol'><img src='assets/man_symbol.png'></img></div>
+          <span class='rider-count'><%= destination.get('waiting_riders').length %></span>
+        </div>
+      </div>
+    </li>
+    <% end %>
+  </ul>
+</div>
